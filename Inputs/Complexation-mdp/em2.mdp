@@ -1,0 +1,21 @@
+; em2.mdp - Second stage of Energy Minimization
+
+; Position Restraints
+define          = -DPOSRES -DPOSRES_FC=1000  ; Apply positional restraints with force constant of 1000 kJ/mol/nm²
+
+; Algorithm and stopping conditions
+integrator  = steep         ; Steepest descent minimization
+emtol       = 10000.0       ; Stop minimization when max force < 10000.0 kJ/mol/nm
+emstep      = 0.01          ; Minimization step size
+nsteps      = 2000          ; Maximum number of minimization steps
+
+; Neighbor searching and interactions
+nstlist         = 20        ; Frequency to update neighbor list
+cutoff-scheme   = Verlet    ; Buffered neighbor searching
+ns_type         = grid      ; Grid-based neighbor search
+coulombtype     = PME       ; Particle Mesh Ewald for electrostatics
+rcoulomb        = 1.2       ; Electrostatic cut-off (nm)
+rvdw            = 1.2       ; Van der Waals cut-off (nm)
+pbc             = xyz       ; Periodic Boundary Conditions in all 3 dimensions
+
+
