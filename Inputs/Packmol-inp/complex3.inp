@@ -3,27 +3,28 @@ filetype pdb
 output complex3.pdb
 
 # --- Place DNA at the center ---
-structure dna_centered.pdb
+structure dna.pdb
   number 1
   fixed 0.0 0.0 0.0  0.0 0.0 0.0
 end structure
 
-# --- Place peptide 1: COM at (25, 0, 0) ---
-structure peptide_centered.pdb
+# --- Each peptide's COM is 25 Å (2.5 nm) away from the DNA COM ---
+# Peptide 1 (Chain A) at (25.00, 0.00, 0.00)
+structure peptide.pdb
   number 1
   chain A
   fixed 25.0 0.0 0.0  0.0 0.0 0.0
 end structure
 
-# --- Place peptide 2: COM at (-25, 0, 0) ---
-structure peptide_centered.pdb
+# Peptide 2 (Chain B) at (-25.00, 0.00, 0.00)
+structure peptide.pdb
   number 1
   chain B
   fixed -25.0 0.0 0.0  0.0 0.0 0.0
 end structure
 
-# --- Place peptide 3: COM at (0, 25, 0) ---
-structure peptide_centered.pdb
+# Peptide 3 (Chain C) at (0.00, 25.00, 0.00)
+structure peptide.pdb
   number 1
   chain C
   fixed 0.0 25.0 0.0  0.0 0.0 0.0
