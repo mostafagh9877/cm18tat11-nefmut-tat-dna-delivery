@@ -34,7 +34,7 @@ tau_t                   = 0.5  0.5                    ; time constant, in ps
 ref_t                   = 300  300                    ; reference temperature, one for each group, in K
 ; Pressure coupling is on
 pcoupl                  = C-rescale             ; Pressure coupling on in NPT
-pcoupltype              = semiisotropic         ; uniform scaling of box vectors
+pcoupltype              = semiisotropic         ; uniform scaling of x-y box vectors, independent z
 tau_p                   = 2                     ; time constant, in ps
 ref_p                   = 1.0   1.0             ; reference pressure, x-y, z (in bar)
 compressibility         = 4.5e-5    4.5e-5      ; isothermal compressibility, bar^-1
