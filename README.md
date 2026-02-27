@@ -5,4 +5,4 @@
 This repository contains the In silico input files to reproduce the results of the paper mentioned above, including MD setups and PACKMOL input files.
 
 
-Questions about these simulations or files? Contact me via [Email](mailto:m-gheydi@razi.tums.ac.ir).
+Questions about these simulations or files? Contact me via [Email](mailto:mostafagheidi@gmail.com).
